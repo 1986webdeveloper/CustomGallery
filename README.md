@@ -24,6 +24,14 @@ call Gallery class from the activity from which we want to select file as depict
 - mode=4 for Video only
 - mode=5 for Pdf  Only
 - mode=6 for Audio only
+
+Dependencies Required:
+
+ - implementation "com.android.support:design:$rootProject.ext.supportLibraryVersion"
+ - implementation 'com.github.bumptech.glide:glide:4.2.0'
+ - implementation 'com.github.barteksc:pdfium-android:1.4.0'
+
+[Note: Use NoActionBar Theme]
 	
 Permissions Required:
 - Read External Storage

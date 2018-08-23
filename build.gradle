@@ -14,7 +14,19 @@ buildscript {
         // in the individual module build.gradle files
     }
 }
+ext{
+    //dependencies
+    junitVersion = '4.12'
+    supportLibraryVersion = '26.+'
+    constraintLayoutVersion ='1.1.2'
+    espressoCoreVersion = '3.0.2'
+    glideVersion = '4.2.0'
+    permissionHelperVersion = '1.2'
+    pdfiumVersion = '1.4.0'
+    runnerVersion = '1.0.2'
+    testEspressoCore = '3.0.2'
 
+}
 allprojects {
     repositories {
         google()

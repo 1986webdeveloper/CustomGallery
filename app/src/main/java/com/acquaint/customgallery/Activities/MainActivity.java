@@ -39,7 +39,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent intent = new Intent(MainActivity.this, Gallery.class);
             // Set the title
             intent.putExtra("title", "Select media");
-            // Mode 1 for both images and videos selection, 2 for images only and 3 for videos!
             intent.putExtra("mode", 1);
             intent.putExtra("maxSelection", 10); // Optional
             if (intent.resolveActivity(getPackageManager()) != null) {
