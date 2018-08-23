@@ -1,11 +1,23 @@
 # CustomGallery
-Custom Gallery
 
-An android demo that allows selection of multiple images, videos, pdf and audio from gallery. Multiple number of files can be selected and the result file paths can be returned back to the activity from where it has been called. We can also set maximum number of files selected. Files are displayed folder wise.
+An android library that allows selection of multiple images, videos, pdf and audio from gallery. Multiple number of files can be selected and the result file paths can be returned back to the activity from where it has been called. We can also set maximum number of files selected. Files are displayed folder wise.
 
 Usage:
+- Add it in your root build.gradle at the end of repositories:
 
-call Gallery class from the activity from which we want to select file as depicted below:
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+- Add the dependency:
+
+dependencies {
+	        implementation 'com.github.1986webdeveloper:CustomGallery:v1.0'
+	}
+
+- Call Gallery class from the activity from which we want to select file as depicted below:
 
 		Intent intent = new Intent(ChatActivity.this, Gallery.class);
 		// Set the title
@@ -18,12 +30,12 @@ call Gallery class from the activity from which we want to select file as depict
 		}
 
 
-- set mode=1 for Image,Video, Pdf and Audio
+[- set mode=1 for Image,Video, Pdf and Audio
 - mode=2 for Image only
 - mode=3 for Image and Video
 - mode=4 for Video only
 - mode=5 for Pdf  Only
-- mode=6 for Audio only
+- mode=6 for Audio only]
 
 Dependencies Required:
 
